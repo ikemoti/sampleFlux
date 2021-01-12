@@ -16,8 +16,11 @@
 		0E664F82259F2209002D5A38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E664F80259F2209002D5A38 /* LaunchScreen.storyboard */; };
 		0E664F8D259F2209002D5A38 /* sampleFluxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E664F8C259F2209002D5A38 /* sampleFluxTests.swift */; };
 		0E664F98259F2209002D5A38 /* sampleFluxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E664F97259F2209002D5A38 /* sampleFluxUITests.swift */; };
-		0E664FAA259F2657002D5A38 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 0E664FA9259F2657002D5A38 /* SwiftPackageProductDependency */; settings = {ATTRIBUTES = (Required, ); }; };
+		0E664FAA259F2657002D5A38 /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0E664FA9259F2657002D5A38 /* ReactorKit */; settings = {ATTRIBUTES = (Required, ); }; };
 		0E664FAF259F2855002D5A38 /* CounterReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E664FAE259F2855002D5A38 /* CounterReactor.swift */; };
+		0E664FDF25A1B189002D5A38 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E664FDE25A1B189002D5A38 /* Search.storyboard */; };
+		0E664FE425A1B1EE002D5A38 /* GithubSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E664FE325A1B1EE002D5A38 /* GithubSearch.swift */; };
+		0E7D2B6325AD815600FBEA6F /* GithubSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D2B6225AD815600FBEA6F /* GithubSearchViewController.swift */; };
 		35EBB58F0978B8DE78A37DEC /* Pods_sampleFluxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE36B6B25F5D438B0929D29 /* Pods_sampleFluxTests.framework */; };
 		5F8F2D61D115708F4246FD58 /* Pods_sampleFlux_sampleFluxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07A40D76B31835AF4E4565F /* Pods_sampleFlux_sampleFluxUITests.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +58,9 @@
 		0E664F97259F2209002D5A38 /* sampleFluxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleFluxUITests.swift; sourceTree = "<group>"; };
 		0E664F99259F2209002D5A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E664FAE259F2855002D5A38 /* CounterReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReactor.swift; sourceTree = "<group>"; };
+		0E664FDE25A1B189002D5A38 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		0E664FE325A1B1EE002D5A38 /* GithubSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearch.swift; sourceTree = "<group>"; };
+		0E7D2B6225AD815600FBEA6F /* GithubSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchViewController.swift; sourceTree = "<group>"; };
 		2B2DB022ECF3EE4CF7A75D9F /* Pods-sampleFlux-sampleFluxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleFlux-sampleFluxUITests.debug.xcconfig"; path = "Target Support Files/Pods-sampleFlux-sampleFluxUITests/Pods-sampleFlux-sampleFluxUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FC4240436D316CA06EFC74F /* Pods-sampleFlux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleFlux.release.xcconfig"; path = "Target Support Files/Pods-sampleFlux/Pods-sampleFlux.release.xcconfig"; sourceTree = "<group>"; };
 		57BCBF0A2016128554126053 /* Pods-sampleFluxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleFluxTests.release.xcconfig"; path = "Target Support Files/Pods-sampleFluxTests/Pods-sampleFluxTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E664FAA259F2657002D5A38 /* BuildFile in Frameworks */,
+				0E664FAA259F2657002D5A38 /* ReactorKit in Frameworks */,
 				089607DAC744ED8F617BA80F /* Pods_sampleFlux.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,11 +136,10 @@
 		0E664F74259F2208002D5A38 /* sampleFlux */ = {
 			isa = PBXGroup;
 			children = (
+				0E664FDA25A1B162002D5A38 /* GithubSearch */,
+				0E664FD025A1B152002D5A38 /* CountUp */,
 				0E664F75259F2208002D5A38 /* AppDelegate.swift */,
 				0E664F77259F2208002D5A38 /* SceneDelegate.swift */,
-				0E664F79259F2208002D5A38 /* CountViewController.swift */,
-				0E664FAE259F2855002D5A38 /* CounterReactor.swift */,
-				0E664F7B259F2208002D5A38 /* Main.storyboard */,
 				0E664F7E259F2208002D5A38 /* Assets.xcassets */,
 				0E664F80259F2209002D5A38 /* LaunchScreen.storyboard */,
 				0E664F83259F2209002D5A38 /* Info.plist */,
@@ -160,6 +165,26 @@
 			path = sampleFluxUITests;
 			sourceTree = "<group>";
 		};
+		0E664FD025A1B152002D5A38 /* CountUp */ = {
+			isa = PBXGroup;
+			children = (
+				0E664FAE259F2855002D5A38 /* CounterReactor.swift */,
+				0E664F79259F2208002D5A38 /* CountViewController.swift */,
+				0E664F7B259F2208002D5A38 /* Main.storyboard */,
+			);
+			path = CountUp;
+			sourceTree = "<group>";
+		};
+		0E664FDA25A1B162002D5A38 /* GithubSearch */ = {
+			isa = PBXGroup;
+			children = (
+				0E664FDE25A1B189002D5A38 /* Search.storyboard */,
+				0E664FE325A1B1EE002D5A38 /* GithubSearch.swift */,
+				0E7D2B6225AD815600FBEA6F /* GithubSearchViewController.swift */,
+			);
+			path = GithubSearch;
+			sourceTree = "<group>";
+		};
 		77288BB0EDF6D7858C6F6CD5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,7 +195,6 @@
 				5ECE3F94779EC1FF583C3C76 /* Pods-sampleFluxTests.debug.xcconfig */,
 				57BCBF0A2016128554126053 /* Pods-sampleFluxTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -193,7 +217,7 @@
 			);
 			name = sampleFlux;
 			packageProductDependencies = (
-				0E664FA9259F2657002D5A38 /* SwiftPackageProductDependency */,
+				0E664FA9259F2657002D5A38 /* ReactorKit */,
 			);
 			productName = sampleFlux;
 			productReference = 0E664F72259F2208002D5A38 /* sampleFlux.app */;
@@ -270,7 +294,7 @@
 			);
 			mainGroup = 0E664F69259F2207002D5A38;
 			packageReferences = (
-				0E664FA8259F2657002D5A38 /* RemoteSwiftPackageReference */,
+				0E664FA8259F2657002D5A38 /* XCRemoteSwiftPackageReference "ReactorKit" */,
 			);
 			productRefGroup = 0E664F73259F2208002D5A38 /* Products */;
 			projectDirPath = "";
@@ -290,6 +314,7 @@
 			files = (
 				0E664F82259F2209002D5A38 /* LaunchScreen.storyboard in Resources */,
 				0E664F7F259F2208002D5A38 /* Assets.xcassets in Resources */,
+				0E664FDF25A1B189002D5A38 /* Search.storyboard in Resources */,
 				0E664F7D259F2208002D5A38 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,9 +443,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E664FE425A1B1EE002D5A38 /* GithubSearch.swift in Sources */,
 				0E664F7A259F2208002D5A38 /* CountViewController.swift in Sources */,
 				0E664F76259F2208002D5A38 /* AppDelegate.swift in Sources */,
 				0E664F78259F2208002D5A38 /* SceneDelegate.swift in Sources */,
+				0E7D2B6325AD815600FBEA6F /* GithubSearchViewController.swift in Sources */,
 				0E664FAF259F2855002D5A38 /* CounterReactor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -762,7 +789,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0E664FA8259F2657002D5A38 /* RemoteSwiftPackageReference */ = {
+		0E664FA8259F2657002D5A38 /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactorKit/ReactorKit";
 			requirement = {
@@ -773,9 +800,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0E664FA9259F2657002D5A38 /* SwiftPackageProductDependency */ = {
+		0E664FA9259F2657002D5A38 /* ReactorKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0E664FA8259F2657002D5A38 /* RemoteSwiftPackageReference */;
+			package = 0E664FA8259F2657002D5A38 /* XCRemoteSwiftPackageReference "ReactorKit" */;
 			productName = ReactorKit;
 		};
 /* End XCSwiftPackageProductDependency section */
